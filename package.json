@@ -11,6 +11,7 @@
     "dev:stop": "node server/node_modules/tsx/dist/cli.mjs scripts/dev-service.ts stop",
     "dev:server": "pnpm --filter @paperclipai/server dev",
     "dev:ui": "pnpm --filter @paperclipai/ui dev",
+    "clean:workspace-dist": "node scripts/clean-workspace-dist.mjs",
     "build": "pnpm run preflight:workspace-links && pnpm -r build",
     "typecheck": "pnpm run preflight:workspace-links && pnpm -r typecheck",
     "test": "pnpm run test:run",
